@@ -4,7 +4,6 @@ def my_select(collection)
     new_array = []
   while i < collection.length
   yield(collection[i])
-  binding.pry
     if collection.values_at(i) == true
     new_array << collection.values_at(i)
   end
