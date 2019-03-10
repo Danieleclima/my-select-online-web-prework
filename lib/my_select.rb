@@ -5,6 +5,7 @@ def my_select(collection)
   while i < collection.length
   yield(collection[i])
     if collection.values_at(i) == true
+    binding.pry
     new_array << collection.values_at(i)
   end
     i += 1
